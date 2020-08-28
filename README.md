@@ -39,3 +39,61 @@ git clone [Shift + ins]
 - `alt + shift +`화살표로 라인을 복사
 - `ctrl + /` 한줄 주석
 - `alt + shift +a `여러줄 주석
+<br><br>
+
+## 변수, 함수, 배열, 객체 
+
+#  변수 (variable)
+- var a = '?';
+- primitive type  숫자 (Number) , 문자(String), 불린(Boolean), null, undefined
+- reference type  배열(Array) , 객체(Object) 
+
+```javascript
+var a;
+console.log(a);
+
+var a = 1;
+console.log(a);
+var a = '1';
+console.log(a);
+var a = true;
+console.log(a);
+var a = null;
+console.log(a);
+
+```
+
+- false == 0 , "" , null, undefined
+
+# 함수 (function)
+
+- 함수 선언문 : Hoisting 
+```javascript
+function b() {
+console.log("B")
+}
+b();
+```
+
+```javascript
+- 함수 표현식 
+var c = function(){
+	console.log("C")
+	
+}
+c(); 
+```
+# 함수의 인자(Arguments)
+```javascript
+function d(x,y){
+	return x*y;
+}
+console.log(d(10,5));
+```
+
+```javascript
+console.log(jQuery());
+```
+
+
+
