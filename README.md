@@ -74,15 +74,16 @@ console.log("B")
 }
 b();
 ```
+- 함수 표현식
 
-```javascript
-- 함수 표현식 
+```javascript 
 var c = function(){
 	console.log("C")
 	
 }
 c(); 
 ```
+
 # 함수의 인자(Arguments)
 ```javascript
 function d(x,y){
@@ -93,7 +94,47 @@ console.log(d(10,5));
 
 ```javascript
 console.log(jQuery());
+//jQuery 를 인자로 받는 함수
+
+$("#bt2").click(function(){
+	console.log("hi");
+});
+//도큐먼트 안의 jquery함수가 아이디를 통해 객체를 부르고 해당 객체가 가지고 있는 클릭 이라는 함수(이벤트리스너)가 콜백함수를 인자로 받아 콘솔에 로그를 출력하는 함수를 실행합니다.
+
+var jQuery = function(str){
+	this = new Array();
+	this[0] = document.querySelection(str);
+	this.prototype.click = function(fn){
+		fn();
+	}
+	return this;
+}
 ```
 
+- 콜백 callback 함수
+```javascript
+function sum(x, y, cb) {
+	var hap = x+y;
+	cb(hap);
+}
+sum(10,20,function(r){alert("10 더하기 20은" + r +"입니다." );
+});
 
+```
+
+```javascript
+$("#bt10").click(function(){
+	var tar = $(".container").width() -300;
+$("#img3").stop().animate({ "left" : tar + "px" }, 500, function(){
+$(this).animate({"left" : 0},500);
+});
+
+$("#bt11").click(function(){
+$("#img3").stop().animate({ "left" : 0}, 500) , function(){
+$(this).animate({"left" : 0},500);
+});
+// animate({}. 1000, "swing/linear", function(){}) 
+// 애니메이트 함수의 마지막 인자로 콜백함수를 사용하여 애니메이션이 끝난 후 다시 애니메이션 동작을 하도록 합니다.
+
+```
 

@@ -85,32 +85,25 @@ c();
 
 
 
+/* function sum(x, y, cb) {
+	var hap = x+y;
+	cb(hap);
+}
+sum(10,20,function(r){alert("10 더하기 20은" + r +"입니다." );
+});
+ */
 
 
+$("#bt10").click(function(){
+	var tar = $(".container").width() -300;
+$("#img3").stop().animate({ "left" : tar + "px" }, 500, function(){
+	$(this).css("opacity",0.5);
+});
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$("#bt11").click(function(){
+$("#img3").stop().animate({ left : '0'}, 500, function(){
+	$(this).css("opacity",1);
+});
+});
 
