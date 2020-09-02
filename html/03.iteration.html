@@ -1,0 +1,65 @@
+<script>
+	// for, forin, forof, foreach,each,filter,map
+	/* for(var i=0, sum=0; i<=10; i++){
+		sum += i;
+	}
+	console.log(sum);
+ */
+	var users = [
+		{name:"홍길동1", age:25, kor:70, en:80},
+		{name:"홍길동2", age:5, kor:60, en:70},
+		{name:"홍길동3", age:45, kor:30, en:40},
+		{name:"홍길동4", age:35, kor:70, en:50},
+		{name:"홍길동5", age:75, kor:80, en:60},
+		{name:"홍길동6", age:65, kor:90, en:80},
+		{name:"홍길동7", age:85, kor:70, en:90},
+		{name:"홍길동8", age:52, kor:50, en:100},
+		{name:"홍길동9", age:51, kor:10, en:40},
+		{name:"홍길동0", age:42, kor:70, en:80}
+		];
+
+		
+		//for in 배열의 인덱스 값을 받아옴
+	/* 	for(var i in users){
+			console.log(users[i]);
+		} */
+		
+		//es6에서 추가된 for-of 배열의 값을 받아옴
+	/* 	for(var v of users){
+			console.log(v);
+		} */
+
+		/* var user40 = [];
+		var user70 = [];
+	
+		users.forEach(function(v, i, a){
+		
+			users[i].avg = (users[i].kor + users[i].en)/2;
+			console.log(users[i].avg);
+
+			if (v.age >= 40)
+				user40.push(v)
+			
+			if (v.avg >= 70)
+				user70.push(v);
+				});
+		console.log(user40);
+console.log(user70);
+	 */
+var user40 = users.filter(function(v){
+	return v.age <= 40;
+});
+console.log(user40);
+
+var users2 = users.map(function(v){
+	v.avg = (v.kor+v.en)/2;
+	return v;
+});
+console.log(users2);
+
+var user70 = users2.filter(function(v){
+	return v.avg >= 70;
+});
+console.log(user70);
+
+</script>

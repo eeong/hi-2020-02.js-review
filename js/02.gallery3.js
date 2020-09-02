@@ -24,7 +24,6 @@ for( var i in lists){
 }
 $(".list").eq(0).trigger("click");
 
-//사용자 함수
 
 
 //이벤트 콜백
@@ -36,4 +35,8 @@ function onListClick(){
 
 //이벤트 선언
 
+//사용자 함수
+
+
+// DOM CONTROL
 
