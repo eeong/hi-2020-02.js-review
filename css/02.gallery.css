@@ -1,0 +1,12 @@
+.container{ text-align: center;}
+
+.list {opacity: 0.7; transition: all 0.5s; cursor: pointer;  overflow: hidden;}
+.list:hover{opacity: 1;}
+.list > img{ transition: transform 0.5s;}
+.list > img:hover{ transform: scale(1.2);}
+
+.alert{ max-width: 466px; margin: 8px auto;}
+.stage{ border: 8px solid #2597da; width: 70%; margin: 24px auto;  } 
+.img-big{ transition: all 0.3s; opacity: 0;}
+
+
