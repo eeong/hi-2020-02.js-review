@@ -1,0 +1,30 @@
+html, body{line-height: 1; height: 5000px;}
+ul,ol,p,li,div{margin: 0; padding: 0; list-style-type: none;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+/* .header{ width: 100%; height: 50px; padding: 12px; background: #333; color: #f8f8f8;}
+
+header > div{float: left; margin-right: 12px; }
+ul.navi-wrap{float: right;}
+ul.navi-wrap li{ padding: 0 12px; float: left;}
+ */
+
+ /*  header  */
+.header{width: 100%; padding: 20px 16px; background: #333; color: #f8f8f8; display: flex; justify-content: space-between;}
+
+.header > .logo-wrap, .header > .navi-wrap{display: flex;}
+.logo-wrap div{margin-left: 12px; }
+.navi-wrap .navi{padding: 0 12px; }
+
+/*  .box-wrap  */
+.box-wrap{height: 60vh; border:10px solid red; font-size: 7vw; justify-content: center; align-items: center; display: flex;}
+.box-wrap > div{ border:5px solid blue; text-align: center;}
+
+/*  .box-wrap2  */
+.box-wrap2 {display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap; flex-direction: row-reverse; height: 60vh; border: 10px solid orangered;}
+.box-wrap2 > .box{background: darkcyan; font-size: 4vw;}
+
+/* food - wrap */
+.food-wrap {max-width: 800px; margin: 0 auto; margin-top: 100px; display:flex; justify-content: flex-start; flex-wrap: wrap;}
+.food-wrap > .food {width: 23%; margin: 1%; }
+

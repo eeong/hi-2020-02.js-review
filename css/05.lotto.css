@@ -1,0 +1,22 @@
+html, body{line-height: 1; height: 5000px;}
+ul,ol,p,li,div{margin: 0; padding: 0; list-style-type: none;}
+.clearfix::after{content: ""; display: block; clear: both;}
+
+.wrapper{
+	max-width: 1200px; margin:auto; width: 100%;
+}
+
+.cont-wrapper{
+	height: calc(100vh - 58px); border: 1px solid #c3e6cb; border-radius: 4px; display: flex;
+}
+.cont-wrapper > div{ width: 50%; text-align: center;}
+.lt-wrap{border-right: 1px solid #c3e6cb;}
+#btnExtract{margin: 30px 0; }
+.lotto-wrap{ display: flex; justify-content: center; align-items: center;}
+.lotto{width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #000; margin-right: 12px;}
+
+.yellow{background: radial-gradient(circle at 35% 35%, #fffadc 5%, #fae883 30%, #af9b2a 70%, #dabe25 100%);}
+.cyan{background: radial-gradient(circle at 35% 35%, #dce7ff 5%, #83adfa 30%, #2a42af 70%, #2546da 100%);}
+.red{background: radial-gradient(circle at 35% 35%, #ffdedc 5%, #fa9183 30%, #af332a 70%, #da2525 100%);}
+.grey{background: radial-gradient(circle at 35% 35%, #f5f5f5 5%, #dadada 30%, #6e6e6e 70%, #9e9e9e 100%);}
+.green{background: radial-gradient(circle at 35% 35%, #e6ffdc 5%, #affa83 30%, #6aaf2a 70%, #58da25 100%);}
