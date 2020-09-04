@@ -15,7 +15,7 @@ function onExtract(){
 	$(".lotto-wrap").empty();
 	var numbers= [];
 	var selectedNumbers=[];
-	var html, colorName;
+	var html = "", colorName;
 	for (var i = 1; i <= 45; i++) numbers.push(i);
 	numbers = _.shuffle(numbers);
 	for(var i = 0; i<6; i++) selectedNumbers.push(numbers.pop());
@@ -34,9 +34,12 @@ function onExtract(){
 		} else {
 			colorName = "green"
 		}
-		html = '<div class="lotto '+colorName+' ">'+selectedNumbers[i]+'</div>';
-		$(".lotto-wrap").append(html);
+		html += '<div class="lotto '+colorName+' ">'+selectedNumbers[i]+'</div>';
 	}
+	$(".lotto-wrap").append(html);
+	html = '<div> '+html+' </div>'
+	$(".lotto-wrap2").append(html);
+	
 }
 
 

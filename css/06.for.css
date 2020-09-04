@@ -1,0 +1,9 @@
+.wrapper{display: flex; flex-wrap: wrap;} 
+
+.box{flex: 30px 0 0 ; height: 30px; border: 1px solid red ; background: orange; }
+
+/* flex-grow 0 늘어나지 않은 default 상태  flex-shrink 1 줄어드는 default 상태
+	flex: flex-basis flex-grow flex-shrink */
+
+
+
